@@ -25,7 +25,6 @@ export function formatDate(inputDateString) {
 	const day = date.getDate();
 	const year = date.getFullYear();
 
-	// Function to add ordinal suffix to day
 	function getOrdinalSuffix(day) {
 		if (day >= 11 && day <= 13) {
 			return day + "th";

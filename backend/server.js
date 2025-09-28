@@ -18,8 +18,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(session({ secret: "keyboard cat", resave: false, saveUninitialized: false }));
-// Initialize Passport!  Also use passport.session() middleware, to support
-// persistent login sessions (recommended).
+
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors());
