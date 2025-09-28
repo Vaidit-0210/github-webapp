@@ -38,6 +38,7 @@ frontend/
 2. **Environment Variables**
    ```bash
    Create a `.env` file in the `frontend/` directory:
+   
    Backend API URL # where Express.js API runs
    VITE_API_BASE_URL=http://localhost:5000
    ```

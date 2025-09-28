@@ -11,8 +11,8 @@ export default defineConfig([
     files: ['**/*.{js,jsx}'],
     extends: [
       js.configs.recommended,
-      react.configs.recommended,      // ✅ React plugin rules
-      react.configs['jsx-runtime'],   // ✅ JSX runtime support
+      react.configs.recommended,     
+      react.configs['jsx-runtime'],  
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
     ],
@@ -25,16 +25,16 @@ export default defineConfig([
       },
     },
     settings: {
-      react: { version: '18.2' }, // ✅ Needed for React rules
+      react: { version: '18.2' }, 
     },
     plugins: {
-      react,           // ✅ Add React plugin
+      react,        
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-      'react/prop-types': 'off', // ✅ Now works
+      'react/prop-types': 'off', 
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
